@@ -1,0 +1,46 @@
+body {
+    background-image: url("../imagenes/Perfil_Usurio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header {
+    background-color: #ff9d00;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+main {
+    flex: 1; /* El contenido del main ocupará todo el espacio disponible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    background-color: #ff9d00;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+}
+
+/* Tablet horizontal */
+@media (max-width: 1080px) { }
+/* Tablet vertical */
+@media (max-width: 768px) { }
+/* Mobil 1 */
+@media (max-width: 480px) { }
+/* Mobil 2 */
+@media (max-width: 375px) { }

@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif; /* Fuente principal de la página */
+    margin: 0; /* Elimina el margen por defecto del navegador */
+    padding: 0; /* Elimina el padding por defecto del navegador */
+    background-image: url('../imagenes/background-2.png'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir el área del fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+header {
+    background-color: #6a6a6a; /* Color de fondo del encabezado */
+    padding: 20px; /* Espacio interno en el encabezado */
+    text-align: center; /* Centra el texto dentro del encabezado */
+}
+
+header nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding de la lista */
+}
+
+header nav ul li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin: 0 10px; /* Espacio horizontal entre los elementos */
+}
+
+header nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #000000; /* Color del texto de los enlaces */
+}
+
+main {
+    display: flex; /* Usa flexbox para el diseño */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    width: auto;
+    height: auto;
+    padding: 20px; /* Espacio interno en el main */
+}
+.container {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 150px;
+}
+
+.lenguages {
+    background-color: gray; /* Color de fondo de la sección de lenguajes */
+    width: 800px; /* Ancho de la sección de lenguajes */
+    text-align: center; /* Centra el texto de la sección */
+    padding: 10px;
+}
+
+table {
+    width: 50%; /* Ancho de la tabla */
+    border-collapse: collapse; /* Elimina el espacio entre las celdas */
+    margin: 20px auto; /* Espacio alrededor de la tabla, centrada */
+    font-family: Arial, sans-serif; /* Fuente de la tabla */
+}
+
+th, td {
+    padding: 10px; /* Espaciado interno de las celdas */
+    text-align: center; /* Centra el texto en las celdas */
+    border: 1px solid #ddd; /* Bordes alrededor de las celdas */
+}
+
+th {
+    background-color: #4CAF50; /* Color de fondo de la cabecera */
+    color: white; /* Color del texto de la cabecera */
+    font-size: 18px; /* Tamaño de la fuente de la cabecera */
+}
+
+td {
+    background-color: #f9f9f9; /* Color de fondo de las celdas */
+    font-size: 16px; /* Tamaño de la fuente de las celdas */
+}
+
+table tr:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el mouse sobre las filas */
+}
+
+footer {
+    text-align: center; /* Centrar texto en el footer */
+    padding: 10px; /* Espacio interno */
+    background-color: #6a6a6a; /* Fondo azul */
+    color: white; /* Color de texto blanco */
+    margin-top: 350px;
+}
+
+@media (max-width: 1080px) {
+    .lenguages {
+        width: 90%; /* Ajustar el ancho en tabletas */
+    }
+
+    table {
+        width: 70%; /* Ajustar el ancho de la tabla */
+    }
+}
+
+/* Tablet vertical */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block; /* Hacer que los elementos del menú se apilen verticalmente */
+        margin: 10px 0; /* Espaciado entre elementos */
+    }
+
+    .lenguages {
+        width: 95%; /* Ancho mayor en pantallas más pequeñas */
+    }
+
+    table {
+        width: 90%; /* Hacer que la tabla ocupe más ancho */
+    }
+}
+
+/* Móvil 1 */
+@media (max-width: 480px) {
+    .lenguages {
+        font-size: 14px; /* Disminuir el tamaño de fuente */
+    }
+
+    th, td {
+        font-size: 14px; /* Ajustar el tamaño de fuente en la tabla */
+    }
+
+    table {
+        width: 100%; /* Hacer que la tabla ocupe todo el ancho */
+    }
+}
+
+/* Móvil 2 */
+@media (max-width: 375px) {
+    .lenguages {
+        font-size: 12px; /* Reducir aún más el tamaño de fuente */
+    }
+
+    th, td {
+        font-size: 12px; /* Ajustar aún más el tamaño de fuente en la tabla */
+    }
+
+    footer {
+        padding: 5px; /* Reducir el padding del footer */
+    }
+}

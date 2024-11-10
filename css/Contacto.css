@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif; /* Fuente principal de la página */
+    margin: 0; /* Elimina el margen por defecto del navegador */
+    padding: 0; /* Elimina el padding por defecto del navegador */
+    background-image: url('../imagenes/background-2.png'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir el área del fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+header {
+    background-color: #6a6a6a; /* Color de fondo del encabezado */
+    padding: 20px; /* Espacio interno en el encabezado */
+    text-align: center; /* Centra el texto dentro del encabezado */
+}
+
+header nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding de la lista */
+}
+
+header nav ul li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin: 0 10px; /* Espacio horizontal entre los elementos */
+}
+
+header nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #000000; /* Color del texto de los enlaces */
+}
+
+main {
+    display: flex; /* Usa flexbox para el diseño */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    width: auto;
+    height: auto;
+    padding: 20px; /* Espacio interno en el main */
+}
+
+.container {
+    width: auto;
+    height: auto;
+    padding: 20px; /* Agrega espacio interno */
+    display: flex; /* Usa flexbox para el diseño */
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    background-color: gray;
+     /* Color de fondo del contenedor */
+    border-radius: 20px; /* Bordes redondeados del contenedor */
+    
+    
+}
+
+.perfil {
+    font-size: 16px; /* Tamaño de fuente del perfil */
+    color: #333; /* Color del texto del perfil */
+     /* Color de fondo del perfil */
+    background-color: #fff; 
+    width: 800px; /* Ancho del perfil */
+    text-align: center; /* Centra el texto del perfil */
+    min-height: 50vh; /* Altura mínima del perfil */
+    padding: 10px;
+    display: flex; /* Activa flexbox */
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    justify-content: center;
+}
+
+code {
+    background-color: #f4f4f4; /* Fondo gris para resaltar el código */
+    padding: 2px 4px; /* Espaciado alrededor del código */
+    border-radius: 4px; /* Bordes redondeados */
+    font-family: 'Courier New', Courier, monospace; /* Fuente para el código */
+    font-size: 14px; /* Tamaño más pequeño para el código */
+}
+
+.perfil h2 {
+    font-size: 34px; /* Tamaño del título del perfil */
+    font-weight: bold; /* Negrita para el título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.perfil p {
+    font-size: 16px; /* Tamaño del párrafo */
+    line-height: 1.5; /* Espaciado entre líneas */
+    color: #000; /* Color del párrafo */
+}
+
+
+footer {
+    text-align: center; /* Centrar texto en el footer */
+    padding: 10px; /* Espacio interno */
+    background-color: #6a6a6a; /* Fondo azul */
+    color: white; /* Color de texto blanco */
+    margin-top: 250px;
+}
+
+/* Tablet horizontal */
+@media (max-width: 1080px) {
+    .perfil {
+        width: 90%; /* Ajustar el ancho en tabletas */
+    }
+
+    main {
+        padding: 10px; /* Reducir padding en main */
+    }
+}
+
+/* Tablet vertical */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block; /* Apilar elementos del menú verticalmente */
+        margin: 10px 0; /* Espaciado vertical entre elementos */
+    }
+
+    .perfil {
+        width: 95%; /* Ancho mayor en pantallas más pequeñas */
+        min-height: 40vh; /* Ajustar la altura mínima */
+    }
+
+    main {
+        padding: 5px; /* Reducir padding en main */
+    }
+}
+
+/* Móvil 1 */
+@media (max-width: 480px) {
+    .perfil h2 {
+        font-size: 28px; /* Reducir tamaño de fuente para el título */
+    }
+
+    .perfil p {
+        font-size: 14px; /* Reducir tamaño de fuente para párrafos */
+    }
+
+    footer {
+        padding: 5px; /* Reducir padding del footer */
+    }
+}
+
+/* Móvil 2 */
+@media (max-width: 375px) {
+    
+}

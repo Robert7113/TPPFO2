@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink-in-The-House</title>
+    <link rel="stylesheet" href="./css/medios-pago.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <h1>Drink in the House</h1>
+            </div>
+            
+            <div class="spacer-container"></div> <!-- Contenedor vacío en la punta derecha -->
+        </div>
+    </header>
+    
+
+    
+
+    <!-- Main content -->
+    <main class="main-content">
+        <div id="payment-section">
+            <h3>Métodos de Pago</h3>
+            <div id="payment-methods">
+            <!-- Aquí se cargarán los métodos de pago -->
+            </div>
+            <!-- Botón para añadir un nuevo método -->
+             <buttom id="add-payment-method">Añadir Método de Pago</buttom>
+            <!-- Formulario para añadir/editar métodos de pago -->
+            <div id="payment-form" style="display:none;">
+                <h4>Añadir/Editar Método de Pago</h4>
+                <label>Número de Tarjeta:</label><br>
+                <input type="text" id="card-number" placeholder="1234 5678 9012 3456"><br>
+    
+                <label for="card-expiry">Fecha de Expiracion</label><br>
+                <input type="text" id="card-expery" place holder="MM/YY"><br>
+    
+                <label for="card-cvv">CW:</label><br>
+                <input type="yext" id="card-cvv" placeholder="123"><br>
+    
+                <buttom id="save-payment-method">Guardar</buttom>
+                <buttom id="cancel-payment">Cancelar</buttom>
+    
+            </div> 
+       
+       
+        </div>
+        <script src="./js/agregar-metodo-pago.js"></script>
+
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Navegación</h4>
+                <ul>
+                    <li>Inicio</li>
+                    <li>Catálogo</li>
+                    <li>Ofertas</li>
+                    <li>Contacto</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Medios de Pago</h4>
+                <ul>
+                    <li>Visa</li>
+                    <li>Mastercard</li>
+                    <li>Paypal</li>
+                    <li>Transferencia</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Medios de Envío</h4>
+                <ul>
+                    <li>DHL</li>
+                    <li>UPS</li>
+                    <li>FedEx</li>
+                    <li>Envíos locales</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Info de Sucursales</h4>
+                <ul>
+                    <li>Buenos Aires</li>
+                    <li>Montevideo</li>
+                    <li>Asunción</li>
+                    <li>Santiago</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            &copy; 2024 Drink-in-The-House. Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
+</html>
