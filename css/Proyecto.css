@@ -144,56 +144,118 @@ footer {
     margin-top: 200px;
 }
 
-/* Tablet horizontal */
+/* --- Responsividad para pantallas medianas (máximo 1080px) --- */
 @media (max-width: 1080px) {
-    .perfil {
-        width: 90%; /* Ajustar el ancho en tabletas */
+    .container {
+        width: 90%;
+        padding: 15px;
     }
-
-    main {
-        padding: 10px; /* Reducir padding en main */
+    #lista-proyectos {
+        width: 90%;
+        padding: 15px;
+    }
+    #lista-proyectos h2 {
+        font-size: 24px;
+    }
+    #lista-proyectos ul li {
+        font-size: 14px;
+        flex-direction: column;
+        text-align: left;
+    }
+    #lista-proyectos ul li button {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .perfil h2 {
+        font-size: 30px;
+    }
+    .perfil p {
+        font-size: 14px;
     }
 }
 
-/* Tablet vertical */
+/* --- Responsividad para pantallas pequeñas (máximo 768px) --- */
 @media (max-width: 768px) {
     header nav ul li {
-        display: block; /* Apilar elementos del menú verticalmente */
-        margin: 10px 0; /* Espaciado vertical entre elementos */
+        display: block;
+        margin: 5px 0;
     }
-
+    .container {
+        width: 100%;
+    }
+    #lista-proyectos {
+        width: 100%;
+        padding: 10px;
+    }
+    #lista-proyectos ul li {
+        font-size: 13px;
+        flex-direction: column;
+        text-align: left;
+    }
+    #lista-proyectos ul li button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
     .perfil {
-        width: 95%; /* Ancho mayor en pantallas más pequeñas */
-        min-height: 60vh; /* Ajustar la altura mínima */
+        font-size: 14px;
     }
-
-    main {
-        padding: 5px; /* Reducir padding en main */
-    }
-}
-
-/* Móvil 1 */
-@media (max-width: 480px) {
     .perfil h2 {
-        font-size: 28px; /* Reducir tamaño de fuente para el título */
+        font-size: 26px;
     }
+}
 
+/* --- Responsividad para pantallas muy pequeñas (máximo 480px) --- */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+    .container {
+        padding: 10px;
+        border-radius: 10px;
+    }
+    #lista-proyectos {
+        padding: 10px;
+        box-shadow: none;
+    }
+    #lista-proyectos ul li {
+        font-size: 12px;
+    }
+    #lista-proyectos ul li button {
+        padding: 5px 8px;
+        font-size: 11px;
+    }
+    .perfil h2 {
+        font-size: 20px;
+    }
     .perfil p {
-        font-size: 14px; /* Reducir tamaño de fuente para párrafos */
-    }
-
-    footer {
-        padding: 5px; /* Reducir padding del footer */
+        font-size: 12px;
     }
 }
 
-/* Móvil 2 */
+/* --- Responsividad para pantallas extra pequeñas (máximo 375px) --- */
 @media (max-width: 375px) {
-    .perfil {
-        font-size: 14px; /* Reducir tamaño de fuente general */
+    body {
+        background-size: contain;
     }
-
-    img {
-        width: 100%; /* Hacer que las imágenes ocupen todo el ancho */
+    .container {
+        padding: 8px;
+    }
+    #lista-proyectos ul li {
+        font-size: 10px;
+    }
+    #lista-proyectos ul li button {
+        padding: 4px 6px;
+        font-size: 10px;
+    }
+    .perfil {
+        font-size: 12px;
+        padding: 5px;
+    }
+    .perfil h2 {
+        font-size: 18px;
+    }
+    .perfil p {
+        font-size: 10px;
     }
 }
+

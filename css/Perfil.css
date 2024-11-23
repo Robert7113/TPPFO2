@@ -94,65 +94,84 @@ footer {
     background-color: #6a6a6a;
     color: white;
 }
-/* Tablet horizontal */
+/* --- Responsividad para pantallas medianas (máximo 1080px) --- */
 @media (max-width: 1080px) {
-    .perfil {
-        width: 90%; /* Aumentar el ancho para tabletas */
-        font-size: 15px; /* Ajustar el tamaño de fuente */
-    }
-
-    header nav ul li {
-        margin: 0 5px; /* Reducir el margen entre los elementos del menú */
-    }
-
     .container {
-        padding: 10px; /* Reducir el padding en tabletas */
+        max-width: 800px;
+        padding: 15px;
+    }
+    .perfil {
+        width: 600px;
+        font-size: 15px;
+    }
+    .perfil h2 {
+        font-size: 30px;
+    }
+    .perfil p {
+        font-size: 14px;
     }
 }
 
-/* Tablet vertical */
+/* --- Responsividad para pantallas pequeñas (máximo 768px) --- */
 @media (max-width: 768px) {
     header nav ul li {
-        display: block; /* Hacer que los elementos del menú se apilen verticalmente */
-        margin: 10px 0; /* Espaciado entre elementos */
+        display: block;
+        margin: 5px 0;
     }
-
-    .perfil {
-        width: 95%; /* Aumentar el ancho para que ocupe más espacio */
-    }
-
     .container {
-        padding: 15px; /* Ajustar padding */
+        max-width: 600px;
+    }
+    .perfil {
+        width: 90%;
+        min-height: 60vh;
+    }
+    .perfil h2 {
+        font-size: 26px;
+    }
+    .perfil p {
+        font-size: 13px;
     }
 }
 
-/* Móvil 1 */
+/* --- Responsividad para pantallas muy pequeñas (máximo 480px) --- */
 @media (max-width: 480px) {
-    .perfil {
-        font-size: 14px; /* Disminuir el tamaño de fuente para móviles */
-    }
-
-    img {
-        width: 100%; /* Hacer que las imágenes sean responsivas */
-        height: auto; /* Mantener la proporción */
-    }
-
     header {
-        padding: 15px; /* Ajustar el padding del header */
+        padding: 10px;
     }
-}
-
-/* Móvil 2 */
-@media (max-width: 375px) {
-    .perfil {
-        font-size: 12px; /* Ajustar aún más el tamaño de fuente */
-    }
-
     .container {
-        padding: 10px; /* Reducir padding aún más */
+        max-width: 100%;
+        padding: 10px;
     }
-
-    header {
-        padding: 10px; /* Reducir padding del header */
+    .perfil {
+        font-size: 12px;
+        min-height: 50vh;
+    }
+    .perfil h2 {
+        font-size: 22px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
+
+/* --- Responsividad para pantallas extra pequeñas (máximo 375px) --- */
+@media (max-width: 375px) {
+    body {
+        background-size: contain;
+    }
+    .perfil {
+        font-size: 11px;
+        padding: 5px;
+    }
+    .perfil h2 {
+        font-size: 18px;
+    }
+    .perfil p {
+        font-size: 10px;
+    }
+    img {
+        margin: 5px 0;
+    }
+}
+

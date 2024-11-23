@@ -94,57 +94,69 @@ footer {
 }
 
 @media (max-width: 1080px) {
-    .lenguages {
-        width: 90%; /* Ajustar el ancho en tabletas */
+    .container {
+        max-width: 700px;
     }
-
     table {
-        width: 70%; /* Ajustar el ancho de la tabla */
+        width: 70%;
+    }
+    th, td {
+        font-size: 14px;
+    }
+    footer {
+        margin-top: 300px;
     }
 }
 
-/* Tablet vertical */
 @media (max-width: 768px) {
     header nav ul li {
-        display: block; /* Hacer que los elementos del menú se apilen verticalmente */
-        margin: 10px 0; /* Espaciado entre elementos */
+        display: block;
+        margin: 10px 0;
     }
-
+    .container {
+        padding: 10px;
+    }
     .lenguages {
-        width: 95%; /* Ancho mayor en pantallas más pequeñas */
+        padding: 5px;
     }
-
     table {
-        width: 90%; /* Hacer que la tabla ocupe más ancho */
+        width: 80%;
     }
-}
-
-/* Móvil 1 */
-@media (max-width: 480px) {
-    .lenguages {
-        font-size: 14px; /* Disminuir el tamaño de fuente */
-    }
-
-    th, td {
-        font-size: 14px; /* Ajustar el tamaño de fuente en la tabla */
-    }
-
-    table {
-        width: 100%; /* Hacer que la tabla ocupe todo el ancho */
-    }
-}
-
-/* Móvil 2 */
-@media (max-width: 375px) {
-    .lenguages {
-        font-size: 12px; /* Reducir aún más el tamaño de fuente */
-    }
-
-    th, td {
-        font-size: 12px; /* Ajustar aún más el tamaño de fuente en la tabla */
-    }
-
     footer {
-        padding: 5px; /* Reducir el padding del footer */
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+    .container {
+        margin-top: 100px;
+    }
+    table {
+        width: 100%;
+    }
+    th, td {
+        font-size: 12px;
+    }
+    footer {
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        background-size: contain;
+    }
+    .container {
+        width: 100%;
+        padding: 5px;
+    }
+    .lenguages {
+        font-size: 14px;
+    }
+    th, td {
+        font-size: 10px;
     }
 }
